@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F95363F527BAA06400EF90B3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95363F427BAA06400EF90B3 /* MapView.swift */; };
 		F9B6925A27BA5E4400FBB23F /* GeoJSONApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6925927BA5E4400FBB23F /* GeoJSONApp.swift */; };
 		F9B6925C27BA5E4400FBB23F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6925B27BA5E4400FBB23F /* ContentView.swift */; };
 		F9B6925E27BA5E4500FBB23F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B6925D27BA5E4500FBB23F /* Assets.xcassets */; };
 		F9B6926127BA5E4500FBB23F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B6926027BA5E4500FBB23F /* Preview Assets.xcassets */; };
+		F9B6926C27BA624500FBB23F /* GeoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B6926B27BA624500FBB23F /* GeoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F95363F427BAA06400EF90B3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F9B6925627BA5E4400FBB23F /* GeoJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B6925927BA5E4400FBB23F /* GeoJSONApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONApp.swift; sourceTree = "<group>"; };
 		F9B6925B27BA5E4400FBB23F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9B6925D27BA5E4500FBB23F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9B6926027BA5E4500FBB23F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9B6926B27BA624500FBB23F /* GeoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				F9B6925927BA5E4400FBB23F /* GeoJSONApp.swift */,
-				F9B6925B27BA5E4400FBB23F /* ContentView.swift */,
 				F9B6925D27BA5E4500FBB23F /* Assets.xcassets */,
+				F9B6926727BA618D00FBB23F /* Managers */,
+				F9B6926A27BA61F500FBB23F /* Views */,
 				F9B6925F27BA5E4500FBB23F /* Preview Content */,
 			);
 			path = GeoJSON;
@@ -65,6 +70,23 @@
 				F9B6926027BA5E4500FBB23F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9B6926727BA618D00FBB23F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F9B6926B27BA624500FBB23F /* GeoManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F9B6926A27BA61F500FBB23F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9B6925B27BA5E4400FBB23F /* ContentView.swift */,
+				F95363F427BAA06400EF90B3 /* MapView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B6926C27BA624500FBB23F /* GeoManager.swift in Sources */,
+				F95363F527BAA06400EF90B3 /* MapView.swift in Sources */,
 				F9B6925C27BA5E4400FBB23F /* ContentView.swift in Sources */,
 				F9B6925A27BA5E4400FBB23F /* GeoJSONApp.swift in Sources */,
 			);
